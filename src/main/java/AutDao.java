@@ -7,7 +7,7 @@ import org.hibernate.query.Query;
 import java.util.List;
 
 public class AutDao implements DaoAuthor {
-    @Override
+    
     public void add(Author a) throws Exception {
         SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         Session session = sessionFactory.openSession();
@@ -17,7 +17,7 @@ public class AutDao implements DaoAuthor {
         session.close();
     }
 
-    @Override
+    
     public List<Author> getAll() throws Exception {
         SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         Session session = sessionFactory.openSession();
@@ -30,17 +30,16 @@ public class AutDao implements DaoAuthor {
         return authors;
     }
 
-    @Override
+    
     public Author getById(int id) throws Exception {
         return null;
     }
 
-    @Override
-    public void update(Author a) throws Exception {
 
+    public void update(Author a) throws Exception {
+        
     }
 
-    @Override
     public void remove(int id) throws Exception {
         SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         Session session = sessionFactory.openSession();

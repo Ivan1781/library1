@@ -7,9 +7,6 @@ import java.util.List;
 @Table(name="author")
 
 public class Author implements Serializable {
-
-
-
     @Id
     @Column(name="id")
     private int id;

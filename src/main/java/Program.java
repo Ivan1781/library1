@@ -16,18 +16,18 @@ import java.util.Queue;
 public class Program {
     public static void main(String[] args) throws Exception {
 
-        AutDao autDao = new AutDao();
-        List<Author> authors = autDao.getAll();
-        for(Author a: authors){
-            System.out.println(a);
-        }
-
-        autDao.remove(26);
-
-        List<Author> authorw = autDao.getAll();
-        for(Author a: authorw){
-            System.out.println(a);
-        }
+//        AutDao autDao = new AutDao();
+//        List<Author> authors = autDao.getAll();
+//        for(Author a: authors){
+//            System.out.println(a);
+//        }
+//
+//        autDao.remove(26);
+//
+//        List<Author> authorw = autDao.getAll();
+//        for(Author a: authorw){
+//            System.out.println(a);
+//        }
 
 
 
