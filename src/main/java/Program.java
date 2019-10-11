@@ -16,11 +16,16 @@ import java.util.Queue;
 public class Program {
     public static void main(String[] args) throws Exception {
 
-//        AutDao autDao = new AutDao();
-//        List<Author> authors = autDao.getAll();
-//        for(Author a: authors){
-//            System.out.println(a);
-//        }
+          AutDao autDao = new AutDao();
+          Author a = new Author(1, "Descartes");
+          autDao.add(a);
+
+          Author ab = autDao.getById(1);
+          System.out.println(ab);
+
+
+
+
 //
 //        autDao.remove(26);
 //
