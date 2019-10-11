@@ -17,12 +17,10 @@ public class Program {
     public static void main(String[] args) throws Exception {
 
           AutDao autDao = new AutDao();
-          Author a = new Author(1, "Descartes");
-          autDao.add(a);
+          autDao.remove(1);
 
-          Author ab = autDao.getById(1);
-          System.out.println(ab);
-
+//          Author a = new Author(1, "Descartes");
+//          autDao.add(a);
 
 
 

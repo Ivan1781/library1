@@ -9,7 +9,7 @@ drop table if exists title;
 
 
 create table if not exists author (
-id int,
+id int primary key,
 author varchar(35)
 );
 

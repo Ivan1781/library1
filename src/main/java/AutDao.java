@@ -17,7 +17,6 @@ public class AutDao implements DaoAuthor {
         session.close();
     }
 
-
     public List<Author> getAll() throws Exception {
         SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         Session session = sessionFactory.openSession();
@@ -26,10 +25,8 @@ public class AutDao implements DaoAuthor {
         List authors = query.list();
         session.getTransaction().commit();
         session.close();
-
         return authors;
     }
-
 
     public Author getById(int id) throws Exception {
         SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
@@ -48,9 +45,11 @@ public class AutDao implements DaoAuthor {
         SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        Query query = session.createQuery("delete from Author where id =: authorId");
 
-        session.getTransaction().commit();
+        Author a = session.get(Author.class, id);
+        session.delete(a);
+        
         session.close();
+
     }
 }
