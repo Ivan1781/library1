@@ -1,12 +1,13 @@
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
+import java.io.Serializable;
 import java.util.List;
 
-public interface DaoAuthor {
-    public void add(Author a) throws Exception;
-    public List<Author> getAll() throws Exception;
-    Author getById(int id)throws Exception;
-    void update(Author a) throws Exception;
-    void remove(int id) throws Exception;
+public interface DaoAuthor<B,  A extends Serializable> {
+    public void add(A a) throws Exception;
+    public List<A> getAll() throws Exception;
+    A getById(B id)throws Exception;
+    void update(A a) throws Exception;
+    void remove(B id) throws Exception;
 }
