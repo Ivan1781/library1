@@ -4,7 +4,7 @@ import org.hibernate.SessionFactory;
 import java.io.Serializable;
 import java.util.List;
 
-public interface DaoAuthor<B,  A extends Serializable> {
+public interface Dao<B,  A extends Serializable> {
     public void add(A a) throws Exception;
     public List<A> getAll() throws Exception;
     A getById(B id)throws Exception;
