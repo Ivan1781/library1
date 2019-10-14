@@ -3,21 +3,20 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-
 import java.util.List;
 
-public class AutDao implements DaoAuthor {
-
-    public void add(Author a) throws Exception {
+public class AutDao implements Dao<Integer, Author> {
+    public void add(Author author) throws Exception {
         SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.save(a);
+        session.save(author);
         session.getTransaction().commit();
         session.close();
     }
 
     public List<Author> getAll() throws Exception {
+
         SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -28,7 +27,7 @@ public class AutDao implements DaoAuthor {
         return authors;
     }
 
-    public Author getById(int id) throws Exception {
+    public Author getById(Integer id) throws Exception {
         SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -36,20 +35,22 @@ public class AutDao implements DaoAuthor {
         return author;
     }
 
-
-    public void update(Author a) throws Exception {
+    public void update(Author author) throws Exception {
 
     }
 
-    public void remove(int id) throws Exception {
+    public void remove(Integer id) throws Exception {
         SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
 
         Author a = session.get(Author.class, id);
         session.delete(a);
-        
+        transaction.commit();
         session.close();
 
     }
-}
+
+
+    }
+
