@@ -1,3 +1,6 @@
+package application.dao;
+
+import application.Entities.Author;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

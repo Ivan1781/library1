@@ -9,7 +9,7 @@
         <property name="connection.password">ironman2019</property>
         <property name="hbm2ddl.auto">update</property>
 
-       <mapping class="Author"/>
-       <mapping class="Title"/>
+       <mapping class="application.Entities.Author"/>
+       <mapping class="application.Entities.Title"/>
     </session-factory>
 </hibernate-configuration>
