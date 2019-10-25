@@ -2,25 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d3f49b5-3b3d-40ac-8732-092939216de4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hibernateFirst.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/authors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/authors.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernateFirst.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/Entities/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Entities/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/application/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/control/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/application/dao/AutDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/application/dao/AutDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/books.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/library1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Program.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application/Entities/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/Entities/Author.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application/Entities/Title.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/Entities/Title.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/Program.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application/control/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/control/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application/dao/AutDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/dao/AutDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application/dao/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/dao/Dao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application/dao/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application/dao/HibernateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/books.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +46,30 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="books: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="books: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="aut_tit: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
@@ -56,6 +86,13 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\sobol\library1\.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -75,7 +112,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.19707318" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
@@ -101,9 +138,15 @@
   </component>
   <component name="RunManager" selected="Application.Program">
     <configuration name="Program" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-12" />
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jre1.8.0_231" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="application.Program" />
+      <module name="hibernateFirst" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
       <module name="hibernateFirst" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,6 +178,11 @@
       <workItem from="1571070622481" duration="7264000" />
       <workItem from="1571598639635" duration="4377000" />
       <workItem from="1571607419245" duration="2848000" />
+      <workItem from="1571831313757" duration="3840000" />
+      <workItem from="1571850076192" duration="729000" />
+      <workItem from="1571852372263" duration="495000" />
+      <workItem from="1571929788713" duration="15518000" />
+      <workItem from="1571987308727" duration="1270000" />
     </task>
     <servers />
   </component>

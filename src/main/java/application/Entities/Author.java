@@ -13,13 +13,13 @@ public class Author implements Serializable {
     @Column(name="id")
     private int id;
 
-    @Column(name="author")
+    @Column(name="name")
     private String author;
 
     @ManyToMany
-    @JoinTable(name="author_title",
-        joinColumns = {@JoinColumn(name="author_id")},
-        inverseJoinColumns = {@JoinColumn(name="title_id")})
+    @JoinTable(name="aut_tit",
+        joinColumns = {@JoinColumn(name="id_aut")},
+        inverseJoinColumns = {@JoinColumn(name="id_tit")})
     private List<Title> titles = new ArrayList<Title>();
 
     public List<Title> getTitles() {
