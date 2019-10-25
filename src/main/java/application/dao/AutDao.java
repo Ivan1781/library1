@@ -49,7 +49,7 @@ public class AutDao implements Dao<Integer, Author> {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
 
-        String hql = "update Author set id=:newId, author=:newAuthor where id=:idds";
+        String hql = "update Author set id=:newId, name=:newAuthor where id=:idds";
         Query query = session.createQuery(hql);
         query.setParameter("newId", newIdd);
         query.setParameter("newAuthor", name);
