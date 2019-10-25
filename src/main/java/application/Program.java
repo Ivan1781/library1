@@ -19,19 +19,8 @@ public class Program {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(Program.class, args);
-        Session session = HibernateUtil.buildSessionFactory().openSession();
-        Transaction transaction = session.beginTransaction();
         AutDao autDao = new AutDao();
-        Query query = session.createQuery("From Author where id = 3");
-        Author author = (Author) query.uniqueResult();
-        System.out.println(author);
-
-
-
-
-
-
-
-
+        autDao.update(13, 14, "Dostoevsky");
+        System.out.println(autDao.getById(14));
     }
 }

@@ -38,12 +38,27 @@ public class AutDao implements Dao<Integer, Author> {
         SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
+
         Author author = session.get(Author.class, id);
         return author;
     }
 
-    public void update(Author author) throws Exception {
+    public void update(int idd, int newIdd, String name) throws Exception {
+        AutDao autDao = new AutDao();
+        SessionFactory sessionFactory = HibernateUtil.buildSessionFactory();
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
 
+        String hql = "update Author set id=:newId, author=:newAuthor where id=:idds";
+        Query query = session.createQuery(hql);
+        query.setParameter("newId", newIdd);
+        query.setParameter("newAuthor", name);
+        query.setParameter("idds", idd);
+
+        int e = query.executeUpdate();
+
+        session.getTransaction().commit();
+        session.close();
     }
 
     public void remove(Integer id) throws Exception {
@@ -55,9 +70,6 @@ public class AutDao implements Dao<Integer, Author> {
         session.delete(a);
         transaction.commit();
         session.close();
-
     }
-
-
-    }
+}
 
