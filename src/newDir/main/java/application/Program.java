@@ -25,13 +25,5 @@ public class Program {
         Query query = session.createQuery("From Author where id = 3");
         Author author = (Author) query.uniqueResult();
         System.out.println(author);
-
-
-
-
-
-
-
-
     }
 }
